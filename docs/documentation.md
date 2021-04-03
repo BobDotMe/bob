@@ -11,9 +11,9 @@ If you're feeling lucky, a simple BoB! cluster can be created with the following
 ***console***
 ```
 #Set the version to a production semantic version
-helm3 report add bob https://262life.github.io/bob    
+helm3 report add 262life https://262life.github.io/bob    
 kubectl create namespace bob
-helm3 install bob bob/bob --version 0.8-7-rc.3 
+helm3 update --install bob 262life/bob --version 0.9.13
 ```
 
 After the cluster is running, you must now install the BoB! plugins.  You WILL require administrator proviledges on your workstation or server to do so.  This is NOT intended to be installed on the K8s hosts.
@@ -21,7 +21,7 @@ After the cluster is running, you must now install the BoB! plugins.  You WILL r
 ***console***
 ```
 #Set the version to a production semantic version
-export vers="v0.9.7"; curl --location --silent -o - https://github.com/262life/bob/releases/download/${vers}/installer.sh | bash -s -- ${vers}
+export vers="v0.9.13"; curl --location --silent -o - https://github.com/262life/bob/releases/download/${vers}/installer.sh | bash -s -- ${vers}
 ```
 ## kubectl plugin
 Details on the plugin can be found [here](commands.md).
