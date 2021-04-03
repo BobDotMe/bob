@@ -6,8 +6,8 @@ icon: https://raw.githubusercontent.com/coreos/etcd/master/logos/etcd-horizontal
 
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
-version: v0.9.12
-appVersion: v0.9.12
+version: v0.9.13
+appVersion: v0.9.13
 home: https://262life.github.io/bob
 sources:
 - https://github.com/262life/bob
