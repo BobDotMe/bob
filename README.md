@@ -1,6 +1,8 @@
 
 ## BOB - Bash On Board!
 
+<img alt="bob" align="left" src="https://github.com/262life/artwork/raw/main/logos/BobLogo-Color.png" width="20%" height="20%">
+
 Bash on Board! (we like to call it BoB!) is an open source **general purpose container** for Kubernetes, providing the utilities, support tools and a framework that allows a diverse set of problems to be solved for pod initialization and support to natively work with cloud-native environments.
 
 ![Hex.pm](https://img.shields.io/hexpm/l/apa)
@@ -70,4 +72,4 @@ Official releases of BoB! can be found on the [releases page](https://github.com
 Please note that it is **strongly recommended** that you use [official releases](https://github.com/262life/bob/releases) of BoB!, as unreleased versions from the master branch are subject to changes and incompatibilities that will not be supported in the official releases.
 Builds from the master branch can have functionality changed and even removed at any time without compatibility support and without prior notice.
 
-<img alt="bob" align="left" src="https://github.com/262life/artwork/raw/main/logos/BobLogo-Color.png" width="20%" height="20%">
+
