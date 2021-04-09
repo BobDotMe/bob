@@ -60,7 +60,7 @@ jobs:
           file: dockerfile/Dockerfile-core
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: 262life/bob-core:${{ env.RELEASE_VERSION }},262life/bob-core: ${{ env.RELEASE_LATEST }}
+          tags: 262life/bob-core:${{ env.RELEASE_VERSION }},262life/bob-core:${{ env.RELEASE_LATEST }}
       - name: Build Action - low-carb
         uses: docker/build-push-action@v2
         with:
@@ -69,15 +69,7 @@ jobs:
           file: dockerfile/Dockerfile-lowcarb
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: 262life/bob-lowcarb:${{ env.RELEASE_VERSION }},262life/bob-lowcarb: ${{ env.RELEASE_LATEST }}
-
-        #env: # Or as an environment variable
-        #    docker_login: ${{ secrets.DOCKER_ID }}
-        #    docker_token: ${{ secrets.DOCKER_TOKEN }}
-        #run: |
-        #  bash -c "chmod 755 .github/scripts/init.sh; LATEST=${{ env.RELEASE_LATEST }} PUBLISH=true TAG=$RELEASE_VERSION DOCKERFILE=dockerfiles/Dockerfile-core      .github/scripts/init.sh bob-core"
-        #  bash -c "chmod 755 .github/scripts/init.sh; LATEST=${{ env.RELEASE_LATEST }} PUBLISH=true TAG=$RELEASE_VERSION DOCKERFILE=dockerfiles/Dockerfile-lowcarb .github/scripts/init.sh bob-lowcarb"
-
+          tags: 262life/bob-lowcarb:${{ env.RELEASE_VERSION }},262life/bob-lowcarb:${{ env.RELEASE_LATEST }}
       - name: Post Build Action
         env: # Or as an environment variable
             docker_login: ${{ secrets.DOCKER_ID }}
