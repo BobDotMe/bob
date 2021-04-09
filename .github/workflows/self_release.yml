@@ -4,9 +4,9 @@ on:
     tags:
     - "v[0-9]+.[1-9]+.[0-9]*"
 jobs:
-  runs-on: [ self-hosted ]
   arm64:
-    runs-on: ubuntu-20.04
+    #runs-on: ubuntu-20.04
+    runs-on: self-hosted
     steps:
       - name: send custom message with args
         uses: appleboy/telegram-action@master
