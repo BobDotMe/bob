@@ -60,7 +60,7 @@ jobs:
           file: dockerfile/Dockerfile-core
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ env.RELEASE_VERSION }} ${{ env.RELEASE_LATEST }}
+          tags: 262life/bob-core:${{ env.RELEASE_VERSION }},262life/bob-core: ${{ env.RELEASE_LATEST }}
       - name: Build Action - low-carb
         uses: docker/build-push-action@v2
         with:
@@ -69,7 +69,7 @@ jobs:
           file: dockerfile/Dockerfile-lowcarb
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ env.RELEASE_VERSION }} ${{ env.RELEASE_LATEST }}
+          tags: 262life/bob-lowcarb:${{ env.RELEASE_VERSION }},262life/bob-lowcarb: ${{ env.RELEASE_LATEST }}
 
         #env: # Or as an environment variable
         #    docker_login: ${{ secrets.DOCKER_ID }}
