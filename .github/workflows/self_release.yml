@@ -47,7 +47,7 @@ jobs:
           bash -c "cd distro; wget https://github.com/262life/bob-ubuntu-image/releases/latest/download/ubuntu-focal-latest.tar.gz"
           bash -c "cd distro; wget https://github.com/262life/bob-ubuntu-image/releases/latest/download/squashed-lowcarb.tar.gz"
           bash -c "chmod 755 files/*; chmod 644 files/*.conf files/README"
-     - name: Login to DockerHub
+      - name: Login to DockerHub
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v1
         with:
