@@ -6,7 +6,7 @@ on:
 jobs:
   arm64:
     #runs-on: ubuntu-20.04
-    runs-on: [ self-hosted, Linux, ARM64 ]
+    runs-on: [self-hosted, Linux, ARM64]
     steps:
       - name: send custom message with args
         uses: appleboy/telegram-action@master
